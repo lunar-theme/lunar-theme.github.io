@@ -5,13 +5,13 @@ function Nav() {
 	return (
 		<nav className={Styles.nav}>
 			<a className={Styles.logolink} href="/">
-				<div className={Styles.monogram}>JW</div>
+				 <img src="/images/logo.png">
 			</a>
-			<a className={Styles.link} href="/projects">
-				Portfolio
+			<a className={Styles.link} href="/ports">
+				Ports
 			</a>
-			<a className={Styles.link} href="/about">
-				About
+			<a className={Styles.link} href="/palette">
+				Palette
 			</a>
 			<a className={Styles.social} href="https://twitter.com/me">
 				<svg className={Styles.socialicon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
