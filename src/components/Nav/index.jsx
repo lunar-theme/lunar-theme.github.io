@@ -5,7 +5,7 @@ function Nav() {
 	return (
 		<nav className={Styles.nav}>
 			<a className={Styles.logolink} href="/">
-				 <img src="/images/logo.png">
+				 <img src="/images/logo.png" />
 			</a>
 			<a className={Styles.link} href="/ports">
 				Ports
