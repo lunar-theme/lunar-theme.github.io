@@ -1,0 +1,16 @@
+---
+import BaseHead from '../components/Head.astro'
+import Nav from '../components/Navbar/index.astro'
+---
+
+<html lang="en" data-theme="lunar">
+  <head>
+    <BaseHead />
+  </head>
+  <body>
+    <Nav />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [ require("daisyui") ],
+  plugins: [ require("@tailwindcss/typography"), require("daisyui") ],
   daisyui: {
     themes: [
       {
-        mytheme: {
+        lunar: {
           "primary": "#161616",         
           "secondary": "#202020",
           "accent": "#3281ea",
@@ -34,5 +34,6 @@ module.exports = {
         },
       },
     ],
+    darkTheme: 'lunar'
   },
 }
