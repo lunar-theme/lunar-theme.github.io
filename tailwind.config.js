@@ -1,11 +1,53 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './public/**/*.html',
     './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}',
   ],
   theme: {
-    extend: {},
-  },
+		extend: {
+			maxWidth: {
+				content: '72rem',
+			},
+			fontSize: {
+				md: '15px',
+			},
+			fontFamily: {
+				sans: ['Inter', ...fontFamily.sans],
+				display: ['Inter', ...fontFamily.sans],
+			},
+			colors: {
+				base: 'var(--base)',
+				surface: 'var(--surface)',
+				overlay: 'var(--overlay)',
+				muted: 'var(--muted)',
+				subtle: 'var(--subtle)',
+				text: 'var(--text)',
+				love: 'var(--love)',
+				gold: 'var(--gold)',
+				rose: 'var(--rose)',
+				pine: 'var(--pine)',
+				foam: 'var(--foam)',
+				iris: 'var(--iris)',
+				highlight: {
+					low: 'var(--highlight-low)',
+					'low-blend': 'var(--highlight-low-blend)',
+					med: 'var(--highlight-med)',
+					'med-blend': 'var(--highlight-med-blend)',
+					high: 'var(--highlight-high)',
+					'high-blend': 'var(--highlight-high-blend)',
+				},
+			},
+			boxShadow: {
+				DEFAULT: '0 10px 30px -20px rgba(87, 82, 121, 0.2)',
+				lg: '0 10px 40px -15px rgba(87, 82, 121, 0.2)',
+			},
+			borderColor: (theme) => ({
+				DEFAULT: theme('colors.highlight.low', 'currentColor'),
+			}),
+		},
+	},
   plugins: [ require("@tailwindcss/typography"), require("daisyui") ],
   daisyui: {
     themes: [
@@ -22,7 +64,7 @@ module.exports = {
           "error": "#B10C0C",
 
           "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
-          "--rounded-btn": "0.5rem", // border radius rounded-btn utility class, used in buttons and similar element
+          "--rounded-btn": "2rem", // border radius rounded-btn utility class, used in buttons and similar element
           "--rounded-badge": "1.9rem", // border radius rounded-badge utility class, used in badges and similar
           "--animation-btn": "0.25s", // duration of animation when you click on button
           "--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
