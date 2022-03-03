@@ -1,14 +1,14 @@
 // Tokens
 :root {
 	// (c)olor
-	--c-black: #161616;
-	--c-blue: #46b4ff;
-	--c-gray: #90aab7;
-	--c-green: #9ef2cb;
-	--c-pink: #ffb8d9;
-	--c-orange: #ffb7a3;
-	--c-yellow: #ffdace;
-	--c-white: #fff;
+	--black: #161616;
+	--blue: #46b4ff;
+	--gray: #90aab7;
+	--green: #9ef2cb;
+	--pink: #ffb8d9;
+	--orange: #ffb7a3;
+	--yellow: #ffdace;
+	--white: #fff;
 
 	// (f)ont
 	--f-u18: 11.390625em;
@@ -49,17 +49,18 @@
 	--f-d18: 0.0877914951989026em;
 
 	// (t)heme
-	--t-fg: var(--c-white);
-	--t-bg: var(--c-black);
-	--t-subdue: var(--c-gray);
-	--t-active: var(--c-blue);
+	--fg: var(--white);
+	--bg: var(--black);
+	--subdue: var(--gray);
+	--active: var(--blue);
 }
 
 // Base
 
 body {
 	margin: 0;
-	color: var(--t-fg);
+	background-color: var(--bg)
+	color: var(--fg);
 	font-family: 'Inter', 'system-ui', sans-serif;
 }
 
