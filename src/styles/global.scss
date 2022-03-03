@@ -1,7 +1,7 @@
 // Tokens
 :root {
 	// (c)olor
-	--c-black: #05091e;
+	--c-black: #161616;
 	--c-blue: #46b4ff;
 	--c-gray: #90aab7;
 	--c-green: #9ef2cb;
@@ -49,8 +49,8 @@
 	--f-d18: 0.0877914951989026em;
 
 	// (t)heme
-	--t-fg: var(--c-black);
-	--t-bg: var(--c-white);
+	--t-fg: var(--c-white);
+	--t-bg: var(--c-black);
 	--t-subdue: var(--c-gray);
 	--t-active: var(--c-blue);
 }
