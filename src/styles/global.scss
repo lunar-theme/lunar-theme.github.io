@@ -91,7 +91,7 @@ $colors: 'black', 'blue', 'white';
 	}
 	// background color
 	.bg-#{$color} {
-		background-color: var(--c-#{color});
+		background-color: var(--c-black);
 	}
 }
 
