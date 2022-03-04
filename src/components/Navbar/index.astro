@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon'
+---
+
+<header class="navbar mx-auto">
+  <div class="navbar-start">
+    <a class="btn btn-ghost btn-sm normal-case text-xl" href="/">
+      Lunar
+    </a>
+  </div>
+  <div class="navbar-center">
+    <div class="flex gap-2 items-center">
+      <a class="btn btn-sm btn-ghost" href="/themes">Themes</a>
+      <a class="btn btn" href="/palette">Palette</a>
+      <a class="btn btn-sm btn-ghost" href="/ports">Ports</a>
+    </div>
+  </div>
+  <div class="navbar-end">
+    <div class="flex gap-2">
+      <a class="btn btn-sm btn-ghost btn-circle" href="https://github.com/lunar-theme">
+        <Icon name="codicon:github" />
+      </a>
+      <a class="btn btn-sm btn-ghost btn-circle" href="#">
+        <Icon name="codicon:twitter" />
+      </a>
+    </div>
+  </div>
+</header>
