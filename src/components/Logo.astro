@@ -1,0 +1,16 @@
+---
+const {
+  icon,
+  banner,
+  classes=""
+} = Astro.props
+
+let finalClass = classes
+if (icon) {
+  finalClass = "h-8 w-8 " + finalClass
+} else if (banner) {
+  finalClass = "h-32 w-32 sm:h-48 sm:w-48" + finalClass
+}
+---
+
+<img src="/assets/logo.png" class={finalClass}/>

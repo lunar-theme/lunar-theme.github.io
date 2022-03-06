@@ -1,13 +1,16 @@
 ---
-import { Icon } from 'astro-icon'
+import Logo from '../Logo.astro'
 ---
-
-<header class="navbar mx-auto">
-  <div class="navbar-start">
-    <a class="btn btn-ghost btn-sm normal-case text-xl" href="/">
-      Lunar
+<header class="navbar mx-auto max-w-content">
+  <div class="navbar-start inline-flex items-center">
+    <a class="btn btn-ghost btn-sm normal-case text-2xl gap-2" href="/">
+      <Logo icon />Lunar
     </a>
   </div>
+  <div class="navbar-end inline-flex gap-2 items-center">
+    <a class="btn btn-sm btn-ghost normal-case" href="/themes">Themes</a>
+    <a class="btn btn-sm btn-ghost normal-case" href="/ports">Ports</a>
+    <a class="btn btn normal-case" href="/palette">Palette</a>
   <div class="navbar-center">
     <div class="flex gap-2 items-center">
       <a class="btn btn-sm btn-ghost normal-case" href="/themes">Themes</a>
