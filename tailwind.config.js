@@ -1,6 +1,7 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
+	jit: true,
   content: [
     './public/**/*.html',
     './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}',
@@ -9,6 +10,9 @@ module.exports = {
 		extend: {
 			maxWidth: {
 				content: '72rem',
+			},
+			width: {
+				scroll: '6px',
 			},
 			fontSize: {
 				md: '15px',
