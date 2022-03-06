@@ -21,11 +21,11 @@
 }
 
 html {
-	@apply inner-core;
+	@apply bg-inner-core;
 }
 
 body {
-	@apply inner-core text-text antialiased pt-2;
+	@apply bg-inner-core text-text antialiased pt-2;
 }
 
 .animate-enter {
