@@ -1,0 +1,24 @@
+---
+import { Icon } from 'astro-icon'
+import Logo from '../Logo.astro'
+---
+
+<footer class="footer footer-center p-10 bg-primary text-primary-content">
+  <div>
+    <Logo />
+    <p class="font-bold">
+      Lunar Theme
+    </p> 
+    <p>Copyright © 2022 - All right reserved</p>
+  </div> 
+  <div>
+    <div class="grid grid-flow-col gap-4">
+      <a class="btn btn-sm btn-ghost btn-circle" href="https://github.com/lunar-theme">
+        <Icon name="codicon:github" />
+      </a>
+      <a class="btn btn-sm btn-ghost btn-circle" href="#">
+        <Icon name="codicon:twitter" />
+      </a>
+    </div>
+  </div>
+</footer>
