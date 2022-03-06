@@ -21,23 +21,23 @@
 }
 
 html {
-	@apply bg-base scroll-smooth;
+	@apply bg-inner-core scroll-smooth;
 }
 
 body {
-	@apply bg-base text-text antialiased pt-2;
+	@apply bg-inner-core text-text antialiased pt-2;
 	overflow: overlay;
 
 	&::-webkit-scrollbar-track {
-		@apply bg-transparent shadow-inner hover:shadow-lg;
+		@apply bg-outer-core shadow-inner hover:shadow-lg;
 	}
 
 	&::-webkit-scrollbar {
-		@apply bg-transparent w-scroll;
+		@apply bg-outer-core w-scroll;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		@apply bg-accent rounded-lg;
+		@apply bg-tropo rounded-lg;
 	}
 	@apply bg-inner-core;
 }
