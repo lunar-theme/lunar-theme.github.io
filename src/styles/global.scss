@@ -25,7 +25,7 @@ html {
 }
 
 body {
-	@apply bg-inner-core text-text antialiased pt-2;
+	@apply bg-inner-core text-text antialiased;
 	overflow: overlay;
 
 	&::-webkit-scrollbar-track {
@@ -40,10 +40,6 @@ body {
 		@apply bg-tropo rounded-lg;
 	}
 	@apply bg-inner-core;
-}
-
-body {
-	@apply bg-inner-core text-text antialiased pt-2;
 }
 
 .animate-enter {

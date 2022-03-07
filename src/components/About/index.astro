@@ -1,30 +1,20 @@
 ---
+import { Icon } from 'astro-icon'
 import Section from '../../layouts/Section.astro'
 ---
 <Section>
-  <div
-    class="grid min-h-[calc(100vh-14rem)] items-center gap-12 lg:grid-cols-[1fr,minmax(0,1fr)]"
-  >
-    <div class="space-y-6 text-center lg:space-y-12 lg:text-left">
-      <h2
-        class="animate-enter font-display text-5xl lg:text-7xl font-bold"
-        style="--stagger: 1"
-      >
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl lg:text-7xl font-bold animate-enter font-display" style="--stagger: 1">
         Straight out of deep space
-      </h2>
-      <p
-        class="animate-enter mx-auto max-w-sm text-lg text-subtle lg:mx-0 lg:max-w-md lg:text-xl"
-        style="--stagger: 2"
-      >
-        Lunar is a minimal, black and blue color scheme inspired by space
+      </h1>
+      <p class="animate-enter text-lg text-subtle mb-5 lg:text-xl" style="--stagger: 2">
+        Lunar is a minimal, black and blue color scheme inspired by space.
       </p>
-      <div class="animate-enter" style="--stagger: 3">
-        <a
-          href="/themes"
-          class="rounded-full bg-tropo hover:bg-meso px-6 py-2.5 font-medium transition-colors duration-150 hover:bg-highlight-high focus:outline-none focus:ring focus:ring-highlight-high"
-          >Discover <span class="ml-1">→</span></a
-        >
-      </div>
+      <a href="/palette" class="btn btn-primary gap-2">
+        Discover 
+        <Icon name="bi:arrow-right" class="h-4 w-4"/>
+      </a>
     </div>
   </div>
 </Section>
