@@ -13,9 +13,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&amp;display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../assets/index.a67a3323.css"></head>
+  <link rel="stylesheet" href="../assets/index.ebdddb3f.css"></head>
   <body>
-    <header class="navbar mx-auto max-w-content">
+    <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg" style="background-color: #0b0d0f;">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover blur-sm brightness-75" src="https://cdn.discordapp.com/attachments/864495905364508713/950854415097688074/space-blue.gif">
+      </div>
+      <header class="navbar mx-auto max-w-content z-10 ">
   <div class="navbar-start inline-flex items-center">
     <a class="btn btn-ghost btn-sm normal-case text-2xl gap-2" href="/">
       
@@ -25,38 +29,33 @@
   <div class="navbar-end inline-flex gap-2 items-center">
     <a class="btn btn-sm btn-ghost normal-case" href="/themes">Themes</a>
     <a class="btn btn-sm btn-ghost normal-case" href="/ports">Ports</a>
-    <a class="btn btn normal-case" href="/palette">Palette</a>
-  <div class="navbar-center">
-    <div class="flex gap-2 items-center">
-      <a class="btn btn-sm btn-ghost normal-case" href="/themes">Themes</a>
-      <a class="btn btn normal-case hover:bg-strato" href="/palette">Palette</a>
-      <a class="btn btn-sm btn-ghost normal-case" href="/ports">Ports</a>
-    </div>
+    <a class="btn normal-case hover:bg-strato" href="/palette">Palette</a>
   </div>
-  <div class="navbar-end">
-    <div class="flex gap-2">
-    </div>
-  </div>
-</div></header>
-    <main class="min-h-[calc(100vh-4rem)]">
-      <section class="w-full py-20">
+</header>
+      <main class="grow flex flex-col items-center justify-center relative">
+        <section class="w-full py-20">
   <div class="mx-auto w-full max-w-content px-6 md:px-10">
-    <div class="grid min-h-[calc(100vh-14rem)] items-center gap-12 lg:grid-cols-[1fr,minmax(0,1fr)]">
-    <div class="space-y-6 text-center lg:space-y-12 lg:text-left">
-      <h2 class="animate-enter font-display text-5xl lg:text-7xl font-bold" style="--stagger: 1">
+    <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl lg:text-7xl font-bold animate-enter font-display gradient-text" style="--stagger: 1">
         Straight out of deep space
-      </h2>
-      <p class="animate-enter mx-auto max-w-sm text-lg text-subtle lg:mx-0 lg:max-w-md lg:text-xl" style="--stagger: 2">
-        Lunar is a minimal, black and blue color scheme inspired by space
+      </h1>
+      <p class="animate-enter text-lg text-subtle mb-5 lg:text-xl" style="--stagger: 2">
+        Lunar is a minimal, black and blue color scheme inspired by space.
       </p>
-      <div class="animate-enter" style="--stagger: 3">
-        <a href="/themes" class="rounded-full bg-tropo hover:bg-meso px-6 py-2.5 font-medium transition-colors duration-150 hover:bg-highlight-high focus:outline-none focus:ring focus:ring-highlight-high">Discover <span class="ml-1">→</span></a>
-      </div>
+      <a href="/palette" class="btn btn-primary gap-2">
+        Discover 
+        
+<svg viewBox="0 0 16 16" class="h-4 w-4" astro-icon="bi:arrow-right"><path fill="currentColor" fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg>
+
+      </a>
     </div>
   </div>
   </div>
 </section> 
-    </main>
+      </main>
+    </div>
+    
     
 <footer class="footer footer-center p-10 bg-primary text-primary-content">
   <div>
