@@ -1,7 +1,7 @@
 ---
 import Logo from '../Logo.astro'
 ---
-<header class="navbar mx-auto max-w-content">
+<header class="navbar mx-auto max-w-content z-10 ">
   <div class="navbar-start inline-flex items-center">
     <a class="btn btn-ghost btn-sm normal-case text-2xl gap-2" href="/">
       <Logo icon />Lunar
@@ -10,16 +10,6 @@ import Logo from '../Logo.astro'
   <div class="navbar-end inline-flex gap-2 items-center">
     <a class="btn btn-sm btn-ghost normal-case" href="/themes">Themes</a>
     <a class="btn btn-sm btn-ghost normal-case" href="/ports">Ports</a>
-    <a class="btn btn normal-case" href="/palette">Palette</a>
-  <div class="navbar-center">
-    <div class="flex gap-2 items-center">
-      <a class="btn btn-sm btn-ghost normal-case" href="/themes">Themes</a>
-      <a class="btn btn normal-case hover:bg-strato" href="/palette">Palette</a>
-      <a class="btn btn-sm btn-ghost normal-case" href="/ports">Ports</a>
-    </div>
-  </div>
-  <div class="navbar-end">
-    <div class="flex gap-2">
-    </div>
+    <a class="btn normal-case hover:bg-strato" href="/palette">Palette</a>
   </div>
 </header>

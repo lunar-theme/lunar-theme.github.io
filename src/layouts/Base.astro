@@ -9,10 +9,16 @@ import Footer from '../components/Footer/index.astro'
     <BaseHead />
   </head>
   <body>
-    <Nav />
-    <main class="min-h-[calc(100vh-4rem)]">
-      <slot />
-    </main>
+    <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg" style="background-color: #0b0d0f;">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover blur-sm brightness-75" src="https://cdn.discordapp.com/attachments/864495905364508713/950854415097688074/space-blue.gif" />
+      </div>
+      <Nav />
+      <main class="grow flex flex-col items-center justify-center relative">
+        <slot name="hero"/>
+      </main>
+    </div>
+    <slot />
     <Footer />
   </body>
 </html>

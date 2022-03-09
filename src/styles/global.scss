@@ -25,7 +25,7 @@ html {
 }
 
 body {
-	@apply bg-inner-core text-text antialiased pt-2;
+	@apply bg-inner-core text-text antialiased;
 	overflow: overlay;
 
 	&::-webkit-scrollbar-track {
@@ -40,10 +40,6 @@ body {
 		@apply bg-tropo rounded-lg;
 	}
 	@apply bg-inner-core;
-}
-
-body {
-	@apply bg-inner-core text-text antialiased pt-2;
 }
 
 .animate-enter {
@@ -61,4 +57,11 @@ body {
 		opacity: 1;
 		transform: none;
 	}
+}
+
+.gradient-text {
+	background: #fc00ff;
+	background: linear-gradient(to right, #00dbde, #fc00ff);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
