@@ -58,3 +58,10 @@ body {
 		transform: none;
 	}
 }
+
+.gradient-text {
+	background: #fc00ff;
+	background: linear-gradient(to right, #00dbde, #fc00ff);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
