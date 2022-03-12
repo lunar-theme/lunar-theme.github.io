@@ -60,8 +60,16 @@ body {
 }
 
 .gradient-text {
-	background: #fc00ff;
-	background: linear-gradient(to right, #00dbde, #fc00ff);
+	background: url(https://media3.giphy.com/media/3ohhwNqFMnb7wZgNnq/200w.webp?cid=ecf05e47d997p21ocdhmsygyroh5htnsovwf7hl7k22blb0q&rid=200w.webp&ct=g);
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-clip: border-box;
+	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #6666;
+	background-position: center;
+	background-size: 17%;
+	filter: brightness(2);
 }
