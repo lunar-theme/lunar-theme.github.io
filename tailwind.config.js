@@ -18,8 +18,8 @@ module.exports = {
 				md: '15px',
 			},
 			fontFamily: {
-				sans: ['Inter', ...fontFamily.sans],
-				display: ['Inter', ...fontFamily.sans],
+				sans: ['General Sans', ...fontFamily.sans],
+				display: ['General Sans', ...fontFamily.sans],
 			},
 			colors: {
 				"inner-core": 'var(--inner-core)',
