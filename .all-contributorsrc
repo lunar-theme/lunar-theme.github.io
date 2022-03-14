@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Blakeinstein",
+      "name": "Blaine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42214598?v=4",
+      "profile": "https://blaine.is-a.dev",
+      "contributions": [
+        "code",
+        "design",
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "lunar-theme.github.io",
+  "projectOwner": "lunar-theme",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
