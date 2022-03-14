@@ -1,6 +1,6 @@
 # website
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Built with astro <3
@@ -20,6 +20,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://blaine.is-a.dev"><img src="https://avatars.githubusercontent.com/u/42214598?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Blaine</b></sub></a><br /><a href="https://github.com/lunar-theme/lunar-theme.github.io/commits?author=Blakeinstein" title="Code">💻</a> <a href="#design-Blakeinstein" title="Design">🎨</a> <a href="#infra-Blakeinstein" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://sheepdev.xyz"><img src="https://avatars.githubusercontent.com/u/68562536?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sheep</b></sub></a><br /><a href="#ideas-sheeepdev" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-sheeepdev" title="Content">🖋</a> <a href="#maintenance-sheeepdev" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
