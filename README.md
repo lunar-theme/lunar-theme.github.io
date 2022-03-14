@@ -2,7 +2,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# 🚀 The Lunar Website
+# 🌙 The Lunar Website
 
 <img src="https://raw.githubusercontent.com/lunar-theme/lunar/main/assets/icon-rounded.png" align="right">
 
@@ -17,6 +17,8 @@ To get started
 1. Install [nodejs](https://nodejs.org)
 2. Run `yarn` to install dependencies
 3. Run `yarn dev` to start the local dev server
+
+# 🚀 Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
