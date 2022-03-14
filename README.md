@@ -1,16 +1,22 @@
-# website
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Built with astro <3
+# 🚀 The Lunar Website
+
+<img src="https://raw.githubusercontent.com/lunar-theme/lunar/main/assets/icon-rounded.png" align="right">
+
+🌐 This is the Lunar theme website. It is built with [Astro](https://astro.build) thanks to @Blakeinstein. The website contains all ports, and colors for the palette, and showcases the color scheme.
+
+The source code is licensed under the GPL.
+
+# ✨ Want to contribute?
 
 To get started
 
-1. Install nodejs
-2. run `yarn` to install dependencies
-3. run `yarn dev` to start the local dev server
-## Contributors ✨
+1. Install [nodejs](https://nodejs.org)
+2. Run `yarn` to install dependencies
+3. Run `yarn dev` to start the local dev server
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
