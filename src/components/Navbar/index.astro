@@ -1,5 +1,11 @@
 ---
 import Logo from '../Logo.astro'
+
+export interface Props {
+  active: string
+}
+
+const { active } = Astro.props as Props
 ---
 <header class="navbar mx-auto max-w-content z-10 mt-4">
   <div class="navbar-start inline-flex items-center">
@@ -8,8 +14,8 @@ import Logo from '../Logo.astro'
     </a>
   </div>
   <div class="navbar-end inline-flex gap-2 items-center">
-    <a class="btn btn-sm btn-ghost normal-case" href="/themes">Themes</a>
-    <a class="btn btn-sm btn-ghost normal-case" href="/ports">Ports</a>
-    <a class="btn normal-case hover:bg-strato" href="/palette">Palette</a>
+    <a class={"btn btn-sm btn-ghost normal-case" + (active == "/themes" ? " btn-active" : "")} href="/themes">Themes</a>
+    <a class={"btn btn-sm btn-ghost normal-case" + (active == "/ports" ? " btn-active" : "")} href="/ports">Ports</a>
+    <a class={"btn normal-case" + (active == "/palette" ? " bg-strato" : " hover:bg-strato")} href="/palette">Palette</a>
   </div>
 </header>
