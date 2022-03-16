@@ -1,4 +1,5 @@
 ---
+import Icon from 'astro-icon'
 import Logo from '../Logo.astro'
 
 export interface Props {
@@ -8,14 +9,48 @@ export interface Props {
 const { active } = Astro.props as Props
 ---
 <header class="navbar mx-auto max-w-content z-10 mt-4">
-  <div class="navbar-start inline-flex items-center">
-    <a class="btn btn-ghost normal-case text-2xl gap-2" href="/">
-      <Logo icon />Lunar
-    </a>
-  </div>
-  <div class="navbar-end inline-flex gap-2 items-center">
-    <a class={"btn btn-sm btn-ghost normal-case" + (active == "/themes" ? " btn-active" : "")} href="/themes">Themes</a>
-    <a class={"btn btn-sm btn-ghost normal-case" + (active == "/ports" ? " btn-active" : "")} href="/ports">Ports</a>
-    <a class={"btn normal-case" + (active == "/palette" ? " bg-strato" : " hover:bg-strato")} href="/palette">Palette</a>
+  <a class="navbar-start btn btn-ghost normal-case text-2xl gap-2" href="/">
+    <Logo icon />Lunar
+  </a>
+  <div class="navbar-end inline-flex items-center">
+    <div class="dropdown dropdown-left sm:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-circle">
+        <Icon class="w-8 h-8" name="mdi:backburger" />
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2">
+        <li>
+          <a class={"btn btn-ghost normal-case" + (active == "/themes" ? " btn-active" : "")} href="/themes">
+            Themes
+          </a>
+        </li>
+        <li>
+          <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " btn-active" : "")} href="/ports">
+            Ports
+          </a>
+        </li>
+        <li>
+          <a class={"btn normal-case" + (active == "/palette" ? " bg-strato" : " hover:bg-strato")} href="/palette">
+            Palette
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="menu hidden sm:menu-horizontal p-0 gap-2">
+      <li>
+        <a class={"btn btn-ghost normal-case" + (active == "/themes" ? " btn-active" : "")} href="/themes">
+          Themes
+        </a>
+      </li>
+      <li>
+        <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " btn-active" : "")} href="/ports">
+          Ports
+        </a>
+      </li>
+      <li>
+        <a class={"btn normal-case" + (active == "/palette" ? " bg-strato" : " hover:bg-strato")} href="/palette">
+          Palette
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
