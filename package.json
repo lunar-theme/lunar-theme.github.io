@@ -9,7 +9,6 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/renderer-preact": "^0.5.0",
     "@tailwindcss/typography": "^0.5.2",
     "astro": "^0.23.4",
     "astro-icon": "^0.6.0",
