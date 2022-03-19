@@ -48,15 +48,15 @@ module.exports = {
     themes: [
       {
         lunar: {
-          "primary": "#161616",         
-          "secondary": "#202020",
-          "accent": "#3281ea",
-          "neutral": "#252525",
-          "base-100": "#303030",
-          "info": "#02a3e8",
-          "success": "#05844A",
-          "warning": "#B10C0C",
-          "error": "#B10C0C",
+          "primary": "#3281ea", // var(--tropo)
+          "secondary": "#02bbe8", // var(--thermo)
+          "accent": "#0284e8", //var(--strato)
+          "neutral": "#252525", // var(--mantle)
+          "base-100": "#303030", // var(--crust)
+          "info": "#02a3e8", // var(--meso)
+          "success": "#05844A", // var(--nebula)
+          "warning": "#B10C0C", // var(--magma)
+          "error": "#B10C0C", // var(--magma)
 
           "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
           "--rounded-btn": "2rem", // border radius rounded-btn utility class, used in buttons and similar element

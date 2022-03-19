@@ -1,6 +1,6 @@
 ---
 import Icon from 'astro-icon'
-import Logo from '../Logo.astro'
+import Logo from '../Common/Logo.astro'
 
 export interface Props {
   active: string
@@ -47,7 +47,7 @@ const { active } = Astro.props as Props
         </a>
       </li>
       <li>
-        <a class={"btn normal-case hover:bg-strato" + (active == "/palette" ? " text-white bg-strato" : "")} href="/palette">
+        <a class={"btn normal-case hover:btn-primary" + (active == "/palette" ? " text-white btn-primary" : "")} href="/palette">
           Palette
         </a>
       </li>

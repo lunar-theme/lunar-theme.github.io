@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@data/*": ["data/*"],
+      "@layouts/*": ["layouts/*"],
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+  },
+  "include": ["./src/**/*"]
 }
