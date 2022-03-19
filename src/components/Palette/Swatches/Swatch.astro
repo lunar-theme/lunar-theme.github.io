@@ -9,9 +9,12 @@ name = name.replace(/([A-Z])/g, " $1")
 name = name.charAt(0).toUpperCase() + name.slice(1)
 ---
 
-<button class="card card-compact bg-slate-900 shadow-xl swatch" data-clipboard={color.hex}>
+<button
+  class="btn card w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary swatch"
+  data-clipboard={color.hex}
+>
   <figure class="h-12 w-full" style={`background: ${ color.rgb } none repeat scroll 0% 0%`} />
   <div class="card-body items-center text-center">
-    <h2 class="card-title" data-name={ name } style={`color: ${ color.rgb }`}>{ name }</h2>
+    <h2 class="card-title normal-case" data-name={ name }>{ name }</h2>
   </div>
 </button>
