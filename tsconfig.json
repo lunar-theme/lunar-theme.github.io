@@ -6,7 +6,9 @@
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
       "@layouts/*": ["layouts/*"],
-    }
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
   },
   "include": ["./src/**/*"]
 }
