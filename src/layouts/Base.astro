@@ -16,6 +16,7 @@ const { active } = Astro.props as Props
   </head>
   <body>
     <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg bg-inner-core">
+      <div class="max-w-full overflow-x-hidden absolute inset-0 background-grid" />
       <Nav active={active}/>
       <main class="grow flex flex-col items-center justify-center relative">
         <slot name="hero"/>
