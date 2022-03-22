@@ -19,12 +19,12 @@ const { active } = Astro.props as Props
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2 text-slate-500">
         <li>
-          <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " text-white" : "")} href="/ports">
+          <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " text-text" : "")} href="/ports">
             Themes
           </a>
         </li>
         <li>
-          <a class={"btn normal-case hover:bg-strato" + (active == "/palette" ? " text-white bg-strato" : "")} href="/palette">
+          <a class={"btn normal-case hover:bg-strato" + (active == "/palette" ? " text-text bg-strato" : "")} href="/palette">
             Palette
           </a>
         </li>
@@ -32,12 +32,12 @@ const { active } = Astro.props as Props
     </div>
     <ul class="menu hidden sm:menu-horizontal p-0 gap-2 text-slate-500">
       <li>
-        <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " text-white" : "")} href="/ports">
+        <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " text-text" : "")} href="/ports">
           Themes
         </a>
       </li>
       <li>
-        <a class={"btn normal-case hover:btn-primary" + (active == "/palette" ? " text-white btn-primary" : "")} href="/palette">
+        <a class={"btn normal-case hover:btn-primary" + (active == "/palette" ? " text-text btn-primary" : "")} href="/palette">
           Palette
         </a>
       </li>
