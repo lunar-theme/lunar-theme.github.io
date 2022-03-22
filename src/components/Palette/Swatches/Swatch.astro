@@ -14,7 +14,8 @@ name = name.charAt(0).toUpperCase() + name.slice(1)
   data-clipboard={color.hex}
 >
   <figure class="h-12 w-full" style={`background: ${ color.rgb } none repeat scroll 0% 0%`} />
-  <div class="card-body items-center text-center">
-    <h2 class="card-title lowercase" data-name={ name }>{ name }</h2>
+  <div class="card-body items-center text-center swap">
+    <h2 class="text-xl font-semibold swap-off lowercase">{ name }</h2>
+    <h2 class="text-xl font-semibold swap-on lowercase">Copied</h2>
   </div>
 </button>

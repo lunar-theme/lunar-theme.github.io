@@ -2,10 +2,11 @@ function copy(e: MouseEvent) {
   const target = e.currentTarget as HTMLButtonElement
   const value = target.dataset.clipboard
   navigator.clipboard.writeText(value)
-  const title = target.querySelector('.card-title') as HTMLHeadingElement
-  title.innerText = 'Copied!'
+  const body = target.querySelector('.card-body') as Element
+  console.log(body)
+  body.classList.add('swap-active')
   setTimeout(() => {
-    title.innerText = title.dataset.name
+    body.classList.remove('swap-active')
   }, 1200)
 }
 
