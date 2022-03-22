@@ -1,1 +1,0 @@
-function c(e){const a=e.currentTarget,r=a.dataset.clipboard;navigator.clipboard.writeText(r);const t=a.querySelector(".card-title");t.innerText="Copied!",setTimeout(()=>{t.innerText=t.dataset.name},1200)}document.querySelectorAll(".swatch").forEach(e=>e.addEventListener("click",c,!1));
