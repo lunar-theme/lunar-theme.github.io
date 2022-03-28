@@ -1,0 +1,10 @@
+---
+export interface Props {
+ title: string
+}
+
+const { title } = Astro.props as Props
+---
+<div class="tooltip tooltip-secondary" data-tip={title}>
+  <slot />
+</div>
