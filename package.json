@@ -9,11 +9,12 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/tailwind": "^0.0.2",
     "@tailwindcss/typography": "^0.5.2",
-    "astro": "^0.23.4",
-    "astro-icon": "^0.6.0",
+    "astro": "^0.25.2",
+    "astro-icon": "^0.6.1",
     "autoprefixer": "^10.4.2",
-    "daisyui": "^2.8.0",
+    "daisyui": "^2.13.4",
     "postcss": "^8.4.7",
     "sass": "^1.49.9",
     "tailwindcss": "^3.0.23"

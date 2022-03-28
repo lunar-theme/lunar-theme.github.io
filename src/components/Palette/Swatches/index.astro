@@ -12,4 +12,6 @@ import Swatch from './Swatch.astro'
     }
   </div>
 </div>
-<script type="module" src={Astro.resolve('./copy.ts')} />
+<script hoist type="module">
+  import './copy.ts'
+</script>
