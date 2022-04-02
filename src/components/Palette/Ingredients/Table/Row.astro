@@ -1,0 +1,28 @@
+---
+export interface Props {
+  name: string
+  hex: string
+  rgb: string
+  hsl: string
+}
+
+let { name, hex, rgb, hsl } = Astro.props as Props
+
+name = name.replace(/([A-Z])/g, " $1")
+name = name.charAt(0).toUpperCase() + name.slice(1)
+---
+<tr>
+  <td>
+    <div class="flex items-center space-x-3">
+      <div class="avatar">
+        <div class="mask mask-squircle w-12 h-12" style={`background: ${ rgb } none repeat scroll 0% 0%`}/>
+      </div>
+      <div>
+        <div class="font-bold">{ name }</div>
+      </div>
+    </div>
+  </td>
+  <td>{ hex }</td>
+  <td>{ rgb }</td>
+  <td>{ hsl }</td>
+</tr>
