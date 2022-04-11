@@ -1,9 +1,57 @@
 ---
+import { Icon } from 'astro-icon'
 import Section from '@layouts/Section.astro'
 import Title from '@components/Common/Title.astro'
+import Port from './Port/index.astro'
+
+import portsJson from '@data/ports.json'
+
+const ports = portsJson as Ports
+
+const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.url))
 ---
 <Section>
-  <Title>
-    Coming Soon
-  </Title>
+  <div
+    class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-72"
+  >
+    <div class="flex flex-col items-around justify-center">
+      <Title>
+        Ports
+      </Title>
+      <div class="flex flex-col gap-2 text-xl text-subtle italic lg:text-xl">
+        <p class="animate-enter" style="--stagger: 2">
+          Journey through the center of the galaxy
+        </p>
+        <div class="inline-flex cursor-default select-none items-end justify-center space-x-3 lg:justify-start">
+          <div class="animate-enter flex items-center space-x-1" style="--stagger: 2.25">
+            <Icon class="text-magma w-8 h-8" name="heroicons-solid:color-swatch" />
+            <span
+              class="bg-gradient-to-r from-magma to-tropo bg-clip-text font-medium text-transparent"
+            >
+              { ports.length } Ports
+            </span>
+          </div>
+          <div
+            class="animate-enter flex items-center space-x-1"
+            style="--stagger: 2.25"
+          >
+            <Icon class="text-tropo w-8 h-8" name="iconoir:donate" />
+            <span
+              class="bg-gradient-to-r from-tropo to-thermo bg-clip-text font-medium text-transparent"
+            >
+              { maintainers.size } maintainers
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul
+    class="animate-enter mx-auto mt-12 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 lg:grid-cols-4"
+    style="--stagger: 2"
+  >
+    {
+      ports.map(port => <Port port={port} />)
+    }
+  </ul>
 </Section>
