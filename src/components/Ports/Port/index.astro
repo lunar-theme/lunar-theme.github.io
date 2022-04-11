@@ -6,15 +6,15 @@ export interface Props {
 
 let { port } = Astro.props as Props
 ---
-<li class="h-full">
+<li class="h-full w-64">
   <a
     rel="external"
     target="_blank"
     href={port.repo}
-    class="px-1 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow"
+    class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow"
   >
     <p
-      class="font-display font-semibold text-md sm:text-lg text-center tracking-wide"
+      class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words"
     >
       {port.name}
     </p>
