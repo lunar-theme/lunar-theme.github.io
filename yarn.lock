@@ -385,10 +385,18 @@
     deepmerge "^4.2.2"
     escalade "^3.1.1"
 
-"@proload/plugin-tsm@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@proload/plugin-tsm/-/plugin-tsm-0.1.1.tgz#096cefbf9a4fab42d129db36b194c64ac0ad20ec"
-  integrity sha512-qfGegg6I3YBCZDjYR9xb41MTc2EfL0sQQmw49Z/yi9OstIpUa/67MBy4AuNhoyG9FuOXia9gPoeBk5pGnBOGtA==
+"@proload/core@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@proload/core/-/core-0.3.2.tgz#de36f335bf87dd6aa8ba25aa92c498821db3a229"
+  integrity sha512-4ga4HpS0ieVYWVMS+F62W++6SNACBu0lkw8snw3tEdH6AeqZu8i8262n3I81jWAWXVcg3sMfhb+kBexrfGrTUQ==
+  dependencies:
+    deepmerge "^4.2.2"
+    escalade "^3.1.1"
+
+"@proload/plugin-tsm@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@proload/plugin-tsm/-/plugin-tsm-0.2.1.tgz#330d1adeb2f5ed9b19a31950019b6ab75399bf7f"
+  integrity sha512-Ex1sL2BxU+g8MHdAdq9SZKz+pU34o8Zcl9PHWo2WaG9hrnlZme607PU6gnpoAYsDBpHX327+eu60wWUk+d/b+A==
   dependencies:
     tsm "^2.1.4"
 
@@ -611,10 +619,10 @@ astro-icon@^0.7.1:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
-astro@^1.0.0-beta.17:
-  version "1.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.0-beta.17.tgz#490fc826b5b433409cbb119bdedf9308f8779791"
-  integrity sha512-CpPJVBiuz4twPH4XgabEpj3py2YMhPnrIxrduJZzSY5NuVs+K7h23wq1umbDZnIY67pRFaPZZtdx0YqKajIXHw==
+astro@^1.0.0-beta.20:
+  version "1.0.0-beta.20"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.0-beta.20.tgz#cfeae87dba5006aacb7b78371845e17c245cf82d"
+  integrity sha512-OlwM+NbBumAvVkksxCgQNRosxx5qVrFfbLTJsZfMTJ0eRgb34JiCTojHJ56NVLMquxgjBDDqk1OCYf2QbPeb5Q==
   dependencies:
     "@astrojs/compiler" "^0.14.2"
     "@astrojs/language-server" "^0.13.4"
@@ -625,8 +633,8 @@ astro@^1.0.0-beta.17:
     "@babel/generator" "^7.17.9"
     "@babel/parser" "^7.17.9"
     "@babel/traverse" "^7.17.9"
-    "@proload/core" "^0.2.2"
-    "@proload/plugin-tsm" "^0.1.1"
+    "@proload/core" "^0.3.2"
+    "@proload/plugin-tsm" "^0.2.1"
     ast-types "^0.14.2"
     boxen "^6.2.1"
     ci-info "^3.3.0"
@@ -635,7 +643,7 @@ astro@^1.0.0-beta.17:
     diff "^5.0.0"
     eol "^0.9.1"
     es-module-lexer "^0.10.5"
-    esbuild "^0.14.36"
+    esbuild "^0.14.38"
     estree-walker "^3.0.1"
     execa "^6.1.0"
     fast-glob "^3.2.11"
@@ -1592,7 +1600,7 @@ esbuild@^0.14.27:
     esbuild-windows-64 "0.14.34"
     esbuild-windows-arm64 "0.14.34"
 
-esbuild@^0.14.36:
+esbuild@^0.14.38:
   version "0.14.38"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.14.38.tgz#99526b778cd9f35532955e26e1709a16cca2fb30"
   integrity sha512-12fzJ0fsm7gVZX1YQ1InkOE5f9Tl7cgf6JPYXRJtPIoE0zkWAbHdPHVPPaLi9tYAcEBqheGzqLn/3RdTOyBfcA==
