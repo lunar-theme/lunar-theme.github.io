@@ -13,15 +13,17 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://api.fontshare.com/css?f[]=general-sans@1,2,200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/asset.e4d7bba8.css"></link><script type="module" src="/entry.c23ec000.js" astro-script="/palette/script-0"></script>
+  <link rel="stylesheet" href="/assets/asset.c7b3ab20.css"></link><script type="module" src="/entry.b2d7f48a.js" astro-script="/palette/script-0"></script>
 </head>
   <body>
     <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg bg-inner-core">
       <div class="max-w-full overflow-x-hidden absolute inset-0 background-grid"></div>
       <header class="navbar mx-auto max-w-content z-10 mt-4">
-  <a class="navbar-start btn btn-ghost normal-case text-2xl gap-2" href="/">
-    <img src="/assets/logo.png" class="h-8 w-8 ">Lunar
-  </a>
+  <div class="navbar-start">
+    <a class="btn btn-ghost normal-case text-2xl gap-2 pr-12" href="/">
+      <img src="/assets/logo.png" class="h-8 w-8 ">Lunar
+    </a>
+  </div>
   <div class="navbar-end inline-flex items-center">
     <div class="dropdown dropdown-left sm:hidden">
       <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -48,7 +50,7 @@
         </a>
       </li>
       <li>
-        <a class="btn normal-case hover:btn-primary btn-primary" href="/palette">
+        <a class="btn normal-case hover:btn-primary btn-primary underline" href="/palette">
           Palette
         </a>
       </li>
@@ -59,7 +61,7 @@
       <main class="grow flex flex-col items-center justify-center relative">
         <section class="w-full py-20">
   <div class="mx-auto w-full max-w-content px-6 md:px-10">
-    <div class="flex flex-col lg:flex-row lg:text-left justify-between items-center">
+    <div class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16">
     <div class="flex flex-col items-around justify-center">
       <h1 class="mb-5 text-6xl lg:text-8xl font-extrabold italic capitalize animate-enter font-display gradient-text" style="--stagger: 1">
   
@@ -70,9 +72,11 @@
         Signals from outer space
       </p>
     </div>
+    <!-- <Toggle /> -->
   </div><div class="animate-enter flex flex-grow items-center justify-center lg:justify-end" style="--stagger: 1">
-    <div class="animate-enter" style="--stagger: 2">
-      <div class="py-20">
+    <div id="toggleTarget" class="swap file:animate-enter" style="--stagger: 2">
+      <!-- <Ingredients /> -->
+      <div class="swap-off">
   <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
     <div class="tooltip tooltip-secondary" data-tip="#161616">
   <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#161616">

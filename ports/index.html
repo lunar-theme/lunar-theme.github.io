@@ -13,15 +13,17 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://api.fontshare.com/css?f[]=general-sans@1,2,200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/asset.e4d7bba8.css"></link>
+  <link rel="stylesheet" href="/assets/asset.c7b3ab20.css"></link>
 </head>
   <body>
     <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg bg-inner-core">
       <div class="max-w-full overflow-x-hidden absolute inset-0 background-grid"></div>
       <header class="navbar mx-auto max-w-content z-10 mt-4">
-  <a class="navbar-start btn btn-ghost normal-case text-2xl gap-2" href="/">
-    <img src="/assets/logo.png" class="h-8 w-8 ">Lunar
-  </a>
+  <div class="navbar-start">
+    <a class="btn btn-ghost normal-case text-2xl gap-2 pr-12" href="/">
+      <img src="/assets/logo.png" class="h-8 w-8 ">Lunar
+    </a>
+  </div>
   <div class="navbar-end inline-flex items-center">
     <div class="dropdown dropdown-left sm:hidden">
       <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -43,7 +45,7 @@
     </div>
     <ul class="menu hidden sm:menu-horizontal p-0 gap-2 text-text">
       <li>
-        <a class="btn btn-ghost normal-case" href="/ports">
+        <a class="btn btn-ghost normal-case underline" href="/ports">
           Ports
         </a>
       </li>
@@ -59,11 +61,110 @@
       <main class="grow flex flex-col items-center justify-center relative">
         <section class="w-full py-20">
   <div class="mx-auto w-full max-w-content px-6 md:px-10">
-    <h1 class="mb-5 text-6xl lg:text-8xl font-extrabold italic capitalize animate-enter font-display gradient-text" style="--stagger: 1">
+    <div class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-72">
+    <div class="flex flex-col items-around justify-center">
+      <h1 class="mb-5 text-6xl lg:text-8xl font-extrabold italic capitalize animate-enter font-display gradient-text" style="--stagger: 1">
   
-    Coming Soon
-  
+        Ports
+      
 </h1>
+      <div class="flex flex-col gap-2 text-xl text-subtle italic lg:text-xl">
+        <p class="animate-enter" style="--stagger: 2">
+          Journey through the center of the galaxy
+        </p>
+        <div class="inline-flex cursor-default select-none items-end justify-center space-x-3 lg:justify-start">
+          <div class="animate-enter flex items-center space-x-1" style="--stagger: 2.25">
+            <svg viewBox="0 0 20 20" class="text-magma w-6 h-6" astro-icon="heroicons-solid:color-swatch"><path fill="currentColor" fill-rule="evenodd" d="M4 2a2 2 0 0 0-2 2v11a3 3 0 1 0 6 0V4a2 2 0 0 0-2-2H4zm1 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm5-1.757 4.9-4.9a2 2 0 0 0 0-2.828L13.485 5.1a2 2 0 0 0-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2z" clip-rule="evenodd"/></svg>
+
+            <span class="bg-gradient-to-r from-magma to-tropo bg-clip-text font-medium text-transparent">
+              4 Ports
+            </span>
+          </div>
+          <div class="animate-enter flex items-center space-x-1" style="--stagger: 2.25">
+            <svg viewBox="0 0 24 24" class="text-tropo w-6 h-6" astro-icon="iconoir:donate"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"><path d="M16 6.28a2.28 2.28 0 0 1-.662 1.606c-.976.984-1.923 2.01-2.936 2.958a.597.597 0 0 1-.822-.017l-2.918-2.94a2.281 2.281 0 0 1 0-3.214 2.277 2.277 0 0 1 3.232 0L12 4.78l.106-.107A2.276 2.276 0 0 1 16 6.28z"/><path stroke-linecap="round" d="m18 20 3.824-3.824a.6.6 0 0 0 .176-.424V10.5A1.5 1.5 0 0 0 20.5 9v0a1.5 1.5 0 0 0-1.5 1.5V15"/><path stroke-linecap="round" d="m18 16 .858-.858a.484.484 0 0 0 .142-.343v0a.485.485 0 0 0-.268-.433l-.443-.221a2 2 0 0 0-2.308.374l-.895.895a2 2 0 0 0-.586 1.414V20M6 20l-3.824-3.824A.6.6 0 0 1 2 15.752V10.5A1.5 1.5 0 0 1 3.5 9v0A1.5 1.5 0 0 1 5 10.5V15"/><path stroke-linecap="round" d="m6 16-.858-.858A.485.485 0 0 1 5 14.799v0c0-.183.104-.35.268-.433l.443-.221a2 2 0 0 1 2.308.374l.895.895a2 2 0 0 1 .586 1.414V20"/></g></svg>
+
+            <span class="bg-gradient-to-r from-tropo to-thermo bg-clip-text font-medium text-transparent">
+              17 maintainers
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><ul class="animate-enter grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4" style="--stagger: 2">
+    <li class="h-full w-64">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/youtube" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+      YouTube
+    </p>
+
+    <div class="flex-1"></div>
+
+    <div class="mt-4 space-x-3 flex items-center">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <svg viewBox="0 0 16 16" class="w-6 h-6 text-tropo" astro-icon="bi:moon-stars"><g fill="currentColor"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/><path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/></g></svg>
+
+      </div>
+
+      
+    </div>
+  </a>
+</li>
+<li class="h-full w-64">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/github" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+      GitHub
+    </p>
+
+    <div class="flex-1"></div>
+
+    <div class="mt-4 space-x-3 flex items-center">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <svg viewBox="0 0 16 16" class="w-6 h-6 text-tropo" astro-icon="bi:moon-stars"><g fill="currentColor"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/><path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/></g></svg>
+
+      </div>
+
+      
+    </div>
+  </a>
+</li>
+<li class="h-full w-64">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/wikipedia" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+      Wikipedia
+    </p>
+
+    <div class="flex-1"></div>
+
+    <div class="mt-4 space-x-3 flex items-center">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <svg viewBox="0 0 16 16" class="w-6 h-6 text-tropo" astro-icon="bi:moon-stars"><g fill="currentColor"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/><path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/></g></svg>
+
+      </div>
+
+      
+    </div>
+  </a>
+</li>
+<li class="h-full w-64">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/onecommander" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+      OneCommander
+    </p>
+
+    <div class="flex-1"></div>
+
+    <div class="mt-4 space-x-3 flex items-center">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <svg viewBox="0 0 16 16" class="w-6 h-6 text-tropo" astro-icon="bi:moon-stars"><g fill="currentColor"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/><path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/></g></svg>
+
+      </div>
+
+      
+    </div>
+  </a>
+</li>
+
+  </ul>
   </div>
 </section> 
       </main>
