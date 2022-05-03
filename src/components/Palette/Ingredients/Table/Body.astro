@@ -1,0 +1,12 @@
+---
+import palette from '@data/palette.json'
+import Row from './Row.astro'
+---
+<tbody>
+  {
+    Object.entries((palette as Palette))
+      .map(
+        ([name, color]) => <Row name={name} hex={color.hex} rgb={color.rgb} hsl={color.hsl} />
+      )
+  }
+</tbody> 

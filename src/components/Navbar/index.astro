@@ -9,15 +9,17 @@ export interface Props {
 const { active } = Astro.props as Props
 ---
 <header class="navbar mx-auto max-w-content z-10 mt-4">
-  <a class="navbar-start btn btn-ghost normal-case text-2xl gap-2" href="/">
-    <Logo icon />Lunar
-  </a>
+  <div class="navbar-start">
+    <a class="btn btn-ghost normal-case text-2xl gap-2 pr-12" href="/">
+      <Logo icon />Lunar
+    </a>
+  </div>
   <div class="navbar-end inline-flex items-center">
     <div class="dropdown dropdown-left sm:hidden">
-      <label tabindex="0" class="btn btn-ghost btn-circle">
+      <label tabindex={0} class="btn btn-ghost btn-circle">
         <Icon class="w-8 h-8" name="system-uicons:menu-hamburger" />
       </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2 text-text">
+      <ul tabindex={0} class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2 text-text">
         <li>
           <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " text-text" : "")} href="/ports">
             Ports
@@ -32,12 +34,12 @@ const { active } = Astro.props as Props
     </div>
     <ul class="menu hidden sm:menu-horizontal p-0 gap-2 text-text">
       <li>
-        <a class={"btn btn-ghost normal-case" + (active == "/ports" ? "" : "")} href="/ports">
+        <a class={"btn btn-ghost normal-case" + (active == "/ports" ? " underline" : "")} href="/ports">
           Ports
         </a>
       </li>
       <li>
-        <a class={"btn normal-case hover:btn-primary" + (active == "/palette" ? " btn-primary" : "")} href="/palette">
+        <a class={"btn normal-case hover:btn-primary" + (active == "/palette" ? " btn-primary underline" : "")} href="/palette">
           Palette
         </a>
       </li>

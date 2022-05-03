@@ -1,11 +1,13 @@
 ---
 import Section from '@layouts/Section.astro'
 import Swatches from './Swatches/index.astro'
+import Ingredients from './Ingredients/index.astro'
+import Toggle from './Toggle/index.astro'
 import Title from '@components/Common/Title.astro'
 ---
 <Section>
   <div
-    class="flex flex-col lg:flex-row lg:text-left justify-between items-center"
+    class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16"
   >
     <div class="flex flex-col items-around justify-center">
       <Title>
@@ -15,12 +17,14 @@ import Title from '@components/Common/Title.astro'
         Signals from outer space
       </p>
     </div>
+    <!-- <Toggle /> -->
   </div>
   <div
     class="animate-enter flex flex-grow items-center justify-center lg:justify-end"
     style="--stagger: 1"
   >
-    <div class="animate-enter" style="--stagger: 2">
+    <div id="toggleTarget" class="swap file:animate-enter" style="--stagger: 2">
+      <!-- <Ingredients /> -->
       <Swatches />
     </div>
   </div>

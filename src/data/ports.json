@@ -1,0 +1,50 @@
+[
+	{
+		"name": "YouTube",
+		"repo": "https://github.com/lunar-theme/youtube",
+		"maintainers": [
+			{
+				"name": "sheep",
+				"url": "https://github.com/sheeepdev"
+			}
+		],
+		"keywords": ["css"],
+		"variants": false
+	},
+	{
+		"name": "GitHub",
+		"repo": "https://github.com/lunar-theme/github",
+		"maintainers": [
+			{
+				"name": "sheep",
+				"url": "https://github.com/sheeepdev"
+			}
+		],
+		"keywords": ["css"],
+		"variants": false
+	},
+	{
+		"name": "Wikipedia",
+		"repo": "https://github.com/lunar-theme/wikipedia",
+		"maintainers": [
+			{
+				"name": "sheep",
+				"url": "https://github.com/sheeepdev"
+			}
+		],
+		"keywords": ["css"],
+		"variants": false
+	},
+	{
+		"name": "OneCommander",
+		"repo": "https://github.com/lunar-theme/onecommander",
+		"maintainers": [
+			{
+				"name": "Abod1960",
+				"url": "https://github.com/Abod1960"
+			}
+		],
+		"keywords": ["files, xaml"],
+		"variants": false
+	}
+]
