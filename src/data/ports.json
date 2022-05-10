@@ -46,5 +46,17 @@
 		],
 		"keywords": ["files, xaml"],
 		"variants": false
+	},
+	{
+		"name": "Ueli",
+		"repo": "https://github.com/lunar-theme/ueli",
+		"maintainers": [
+			{
+				"name": "Abod1960",
+				"url": "https://github.com/Abod1960"
+			}
+		],
+		"keywords": ["lunar, ueli"],
+		"variants": false
 	}
 ]
