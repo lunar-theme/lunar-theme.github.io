@@ -58,5 +58,25 @@
 		],
 		"keywords": ["lunar, ueli"],
 		"variants": false
+	},
+	{
+		"name": "Wallpapers",
+		"repo": "https://github.com/lunar-theme/wallpapers",
+		"maintainers": [
+			{
+				"name": "sheeepdev",
+				"url": "https://github.com/sheeepdev"
+			},
+			{
+				"name": "Abod1960",
+				"url": "https://github.com/Abod1960"
+			},
+			{
+				"name": "Pukima",
+				"url": "https://github.com/Pukimaa"
+			}
+		],
+		"keywords": ["wallpapers, lunar"],
+		"variants": false
 	}
 ]
