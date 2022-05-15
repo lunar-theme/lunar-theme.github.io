@@ -1,0 +1,25 @@
+---
+import Moodlet from "./Moodlet.astro";
+---
+<section class="w-screen bg-black bg-opacity-30">
+  <ul class="grid grid-cols-1 gap-6 sm:grid-cols-3 max-w-content mx-auto">
+    <Moodlet
+      title="Calm"
+      caption="Like the days you spent looking at the starry night sky"
+      icon="wi:stars"
+      className="text-tropo"
+    />
+    <Moodlet
+      title="Enigmatic"
+      caption="Inspiration for the next big thing"
+      icon="carbon:idea"
+      className="text-magma"
+    />
+    <Moodlet
+      title="Interconnected"
+      caption="The universe keeps growing with your help"
+      icon="icon-park-outline:four-round-point-connection"
+      className="text-nebula"
+    />
+  </ul>
+</section>

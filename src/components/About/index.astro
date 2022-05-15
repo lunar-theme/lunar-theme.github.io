@@ -2,10 +2,11 @@
 import { Icon } from 'astro-icon'
 import Section from '@layouts/Section.astro'
 import Title from '@components/Common/Title.astro'
+import Moodlets from './Moodlets/index.astro';
 ---
 <Section>
   <div class="hero-content text-center text-neutral-content">
-    <div class="max-w-md">
+    <div class="max-w-md flex flex-col items-center justify-center min-h-[calc(100vh-14rem)] pb-12">
       <Title>
         Straight out of deep space
       </Title>
@@ -19,3 +20,4 @@ import Title from '@components/Common/Title.astro'
     </div>
   </div>
 </Section>
+<Moodlets />
