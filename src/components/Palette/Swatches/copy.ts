@@ -3,7 +3,6 @@ function copy(e: MouseEvent) {
   const value = target.dataset.clipboard
   navigator.clipboard.writeText(value)
   const body = target.querySelector('.card-body') as Element
-  console.log(body)
   body.classList.add('swap-active')
   setTimeout(() => {
     body.classList.remove('swap-active')
