@@ -50,7 +50,7 @@ const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(m
             x-ref="searchField"
             x-model="search"
             x-on:keydown.window.prevent.slash="$refs.searchField.focus()"
-            placeholder="Search..."
+            placeholder="Search... (/ to focus)"
             type="search"
             class="input input-sm input-bordered shadow-xl bg-black w-52"
           />
