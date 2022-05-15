@@ -11,47 +11,83 @@ const ports = portsJson as Ports
 const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.url))
 ---
 <Section>
-  <div
-    class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-72"
-  >
-    <div class="flex flex-col items-around justify-center">
-      <Title>
-        Ports
-      </Title>
-      <div class="flex flex-col gap-2 text-xl text-subtle italic lg:text-xl">
-        <p class="animate-enter" style="--stagger: 2">
-          Journey through the center of the galaxy
-        </p>
-        <div class="inline-flex cursor-default select-none items-end justify-center space-x-3 lg:justify-start">
-          <div class="animate-enter flex items-center space-x-1" style="--stagger: 2.25">
-            <Icon class="text-magma w-6 h-6" name="heroicons-solid:color-swatch" />
-            <span
-              class="bg-gradient-to-r from-magma to-tropo bg-clip-text font-medium text-transparent"
-            >
-              { ports.length } Ports
-            </span>
+  <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[80vw] max-w-full flex flex-col items-center">
+    <div
+      class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-full"
+    >
+      <div class="flex flex-col items-around justify-center w-full">
+        <Title>
+          Ports
+        </Title>
+        <div class="flex w-full justify-between items-center">
+          <div class="flex flex-col gap-2 text-xl text-subtle italic lg:text-xl">
+            <p class="animate-enter" style="--stagger: 2">
+              Journey through the center of the galaxy
+            </p>
+            <div class="inline-flex cursor-default select-none items-end justify-center space-x-3 lg:justify-start">
+              <div class="animate-enter flex items-center space-x-1" style="--stagger: 2.25">
+                <Icon class="text-magma w-6 h-6" name="heroicons-solid:color-swatch" />
+                <span
+                  class="bg-gradient-to-r from-magma to-tropo bg-clip-text font-medium text-transparent"
+                >
+                  { ports.length } Ports
+                </span>
+              </div>
+              <div
+                class="animate-enter flex items-center space-x-1"
+                style="--stagger: 2.25"
+              >
+                <Icon class="text-tropo w-6 h-6" name="iconoir:donate" />
+                <span
+                  class="bg-gradient-to-r from-tropo to-thermo bg-clip-text font-medium text-transparent"
+                >
+                  { maintainers.size } maintainers
+                </span>
+              </div>
+            </div>
           </div>
-          <div
-            class="animate-enter flex items-center space-x-1"
-            style="--stagger: 2.25"
-          >
-            <Icon class="text-tropo w-6 h-6" name="iconoir:donate" />
-            <span
-              class="bg-gradient-to-r from-tropo to-thermo bg-clip-text font-medium text-transparent"
-            >
-              { maintainers.size } maintainers
-            </span>
-          </div>
+          <input
+            x-ref="searchField"
+            x-model="search"
+            x-on:keydown.window.prevent.slash="$refs.searchField.focus()"
+            placeholder="Search... (/ to focus)"
+            type="search"
+            class="input input-sm input-bordered shadow-xl bg-black w-52"
+          />
         </div>
       </div>
     </div>
+    <ul
+      class="animate-enter grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4"
+      style="--stagger: 2"
+      id="port-list"
+    >
+      {
+        ports.map(port => <Port port={port} />)
+      }
+    </ul>
   </div>
-  <ul
-    class="animate-enter grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4"
-    style="--stagger: 2"
-  >
-    {
-      ports.map(port => <Port port={port} />)
-    }
-  </ul>
 </Section>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js" is:inline></script>
+<script is:inline> 
+const items = document.querySelectorAll('#port-list>li')
+const portsJson = Array.from(items).map(i => i.dataset)
+const allSet = new Set(portsJson.map(p => `port-${p.name}`))
+
+window.portSearch = () => ({
+    search: '',
+    fuseObj: new Fuse(portsJson, {
+      keys: ["name", "repo", "keywords"],
+    }),
+    filter () {
+      if (this.search === '' || this.search === '*') {
+        return allSet
+      }
+      const visibleSet = new Set()
+      const res = this.fuseObj.search(this.search)
+      res.forEach(portItem => visibleSet.add(`port-${portItem.item.name}`))
+      return visibleSet
+    },
+    filtered: allSet
+})
+</script>
