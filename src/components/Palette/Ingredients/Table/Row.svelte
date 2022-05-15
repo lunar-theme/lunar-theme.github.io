@@ -1,21 +1,24 @@
----
-export interface Props {
+<script lang="ts">
+interface $$Props {
   name: string
   hex: string
   rgb: string
   hsl: string
 }
 
-let { name, hex, rgb, hsl } = Astro.props as Props
+export let name: string;
+export let hex: string;
+export let rgb: string;
+export let hsl: string;
 
 name = name.replace(/([A-Z])/g, " $1")
 name = name.charAt(0).toUpperCase() + name.slice(1)
----
+</script>
 <tr>
   <td>
     <div class="flex items-center space-x-3">
       <div class="avatar">
-        <div class="mask mask-squircle w-12 h-12" style={`background: ${ rgb } none repeat scroll 0% 0%`}/>
+        <div class="mask mask-squircle w-12 h-12" style="background: { rgb } none repeat scroll 0% 0%"/>
       </div>
       <div>
         <div class="font-bold">{ name }</div>
