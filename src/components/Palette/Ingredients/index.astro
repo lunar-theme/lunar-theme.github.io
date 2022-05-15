@@ -1,7 +1,7 @@
 ---
 import Table from './Table/index.svelte'
 ---
-<div class="swap-on">
+<div x-show="open == 'ing'" class="animate-enter" style="--stagger: 1">
   <div class="overflow-x-auto w-full">
     <Table />
   </div>

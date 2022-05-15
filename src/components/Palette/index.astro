@@ -2,12 +2,12 @@
 import Section from '@layouts/Section.astro'
 import Swatches from './Swatches/index.astro'
 import Ingredients from './Ingredients/index.astro'
-import Toggle from './Toggle/index.astro'
 import Title from '@components/Common/Title.astro'
 ---
 <Section>
+  <div x-data="{ open: 'swa' }" class="w-[80vw] flex flex-col items-center" >
   <div
-    class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16"
+    class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-full"
   >
     <div class="flex flex-col items-around justify-center">
       <Title>
@@ -17,15 +17,17 @@ import Title from '@components/Common/Title.astro'
         Signals from outer space
       </p>
     </div>
-    <Toggle />
+    <div id="toggler" class="btn-group">
+      <button x-on:click="open = 'swa'" x-bind:class="'btn btn-sm' + (open == 'swa' ? ' btn-active' : '')">Swatches</button>
+      <button x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
+    </div>
   </div>
   <div
-    class="animate-enter flex flex-grow items-center justify-center lg:justify-end"
+    class="animate-enter flex flex-grow justify-center items-center w-full"
     style="--stagger: 1"
   >
-    <div id="toggleTarget" class="swap file:animate-enter" style="--stagger: 2">
-      <Ingredients />
-      <Swatches />
-    </div>
+    <Ingredients />
+    <Swatches />
+  </div>
   </div>
 </Section>
