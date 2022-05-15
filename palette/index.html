@@ -75,9 +75,9 @@
         Signals from outer space
       </p>
     </div>
-    <div id="toggler" class="btn-group lowercase">
-      <button x-on:click="open = 'swa'" x-bind:class="'btn btn-sm' + (open == 'swa' ? ' btn-active' : '')">Swatches</button>
-      <button x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
+    <div id="toggler" class="btn-group">
+      <button class="lowercase" x-on:click="open = 'swa'" x-bind:class="'btn btn-sm' + (open == 'swa' ? ' btn-active' : '')">Swatches</button>
+      <button class="lowercase" x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
     </div>
   </div>
   <div class="animate-enter flex flex-grow justify-center items-center w-full" style="--stagger: 1">
