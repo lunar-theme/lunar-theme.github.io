@@ -5,7 +5,7 @@
 		"maintainers": [
 			{
 				"name": "sheep",
-				"url": "https://github.com/sheeepdev"
+				"url": "https://sheepdev.xyz"
 			}
 		],
 		"keywords": ["css"],
@@ -17,7 +17,7 @@
 		"maintainers": [
 			{
 				"name": "sheep",
-				"url": "https://github.com/sheeepdev"
+				"url": "https://sheepdev.xyz"
 			}
 		],
 		"keywords": ["css"],
@@ -29,7 +29,7 @@
 		"maintainers": [
 			{
 				"name": "sheep",
-				"url": "https://github.com/sheeepdev"
+				"url": "https://sheepdev.xyz"
 			}
 		],
 		"keywords": ["css"],
@@ -65,7 +65,7 @@
 		"maintainers": [
 			{
 				"name": "sheeepdev",
-				"url": "https://github.com/sheeepdev"
+				"url": "https://sheepdev.xyz"
 			},
 			{
 				"name": "Abod1960",
@@ -77,6 +77,30 @@
 			}
 		],
 		"keywords": ["wallpapers, lunar"],
+		"variants": false
+	},
+	{
+		"name": "Reddit",
+		"repo": "https://github.com/lunar-theme/reddit",
+		"maintainers": [
+			{
+				"name": "sheep",
+				"url": "https://sheepdev.xyz"
+			}
+		],
+		"keywords": ["css"],
+		"variants": false
+	},
+	{
+		"name": "Konsole",
+		"repo": "https://github.com/lunar-theme/konsole",
+		"maintainers": [
+			{
+				"name": "sheep",
+				"url": "https://sheepdev.xyz"
+			}
+		],
+		"keywords": ["terminal, linux, konsole"],
 		"variants": false
 	}
 ]
