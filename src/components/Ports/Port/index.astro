@@ -6,20 +6,18 @@ export interface Props {
 
 let { port } = Astro.props as Props
 ---
-<li class="h-full w-64" x-show={`filtered.has('port-${ port.name }')`} data-name={port.name} data-repo={port.repo} data-keywords={port.keywords}>
+<li class="h-full" x-show={`filtered.has('port-${ port.name }')`}>
   <a
     rel="external"
     target="_blank"
     href={port.repo}
-    class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow"
+    class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow"
   >
-    <p
+    <h2
       class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words"
     >
       {port.name}
-    </p>
-
-    <div class="flex-1" />
+    </h2>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">

@@ -8,18 +8,23 @@ import portsJson from '@data/ports.json'
 
 const ports = portsJson as Ports
 
+const portSearchData = portsJson.map(port => ({
+  name: port.name,
+  keywords: port.keywords,
+}))
+
 const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.url))
 ---
 <Section>
-  <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[80vw] max-w-full flex flex-col items-center">
+  <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col items-center">
     <div
-      class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-full"
+      class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-12 w-full"
     >
       <div class="flex flex-col items-around justify-center w-full">
         <Title>
           Ports
         </Title>
-        <div class="flex w-full justify-between items-center">
+        <div class="flex flex-col sm:flex-row gap-6 w-full justify-between items-center">
           <div class="flex flex-col gap-2 text-xl text-subtle italic lg:text-xl">
             <p class="animate-enter" style="--stagger: 2">
               Journey through the center of the galaxy
@@ -58,7 +63,7 @@ const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(m
       </div>
     </div>
     <ul
-      class="animate-enter grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4"
+      class="animate-enter grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 w-full"
       style="--stagger: 2"
       id="port-list"
     >
@@ -69,15 +74,13 @@ const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(m
   </div>
 </Section>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js" is:inline></script>
-<script is:inline> 
-const items = document.querySelectorAll('#port-list>li')
-const portsJson = Array.from(items).map(i => i.dataset)
-const allSet = new Set(portsJson.map(p => `port-${p.name}`))
+<script is:inline define:vars={{ portSearchData }}> 
+const allSet = new Set(portSearchData.map(p => `port-${p.name}`))
 
 window.portSearch = () => ({
     search: '',
-    fuseObj: new Fuse(portsJson, {
-      keys: ["name", "repo", "keywords"],
+    fuseObj: new Fuse(portSearchData, {
+      keys: ["name", "keywords"],
     }),
     filter () {
       if (this.search === '' || this.search === '*') {
