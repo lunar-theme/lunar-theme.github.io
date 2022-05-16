@@ -11,15 +11,15 @@ const ports = portsJson as Ports
 const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.url))
 ---
 <Section>
-  <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[80vw] max-w-full flex flex-col items-center">
+  <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col items-center gap-4">
     <div
-      class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-full"
+      class="flex flex-col lg:flex-row lg:text-left justify-between items-center w-full"
     >
       <div class="flex flex-col items-around justify-center w-full">
         <Title>
           Ports
         </Title>
-        <div class="flex w-full justify-between items-center">
+        <div class="flex flex-col sm:flex-row gap-6 w-full justify-between items-center">
           <div class="flex flex-col gap-2 text-xl text-subtle italic lg:text-xl">
             <p class="animate-enter" style="--stagger: 2">
               Journey through the center of the galaxy
