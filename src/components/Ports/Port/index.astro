@@ -6,7 +6,7 @@ export interface Props {
 
 let { port } = Astro.props as Props
 ---
-<li class="h-full" x-show={`filtered.has('port-${ port.name }')`} data-name={port.name} data-repo={port.repo} data-keywords={port.keywords}>
+<li class="h-full" x-show={`filtered.has('port-${ port.name }')`}>
   <a
     rel="external"
     target="_blank"
