@@ -15,7 +15,7 @@
 <link href="https://api.fontshare.com/css?f[]=general-sans@1,2,200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
 <script src="//unpkg.com/alpinejs" type="module"></script>
 
-  <link rel="stylesheet" href="/assets/asset.f479137c.css"></link>
+  <link rel="stylesheet" href="/assets/asset.99fe9e08.css"></link>
 </head>
   <body>
     <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg bg-inner-core">
@@ -62,16 +62,16 @@
 
       <main class="grow flex flex-col items-center relative">
         <section class="w-full py-20">
-  <div class="mx-auto w-full max-w-content px-6 md:px-10">
-    <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[80vw] max-w-full flex flex-col items-center">
-    <div class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-16 w-full">
+  <div class="mx-auto w-full max-w-content">
+    <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col items-center">
+    <div class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-12 w-full">
       <div class="flex flex-col items-around justify-center w-full">
         <h1 class="mb-5 text-6xl lg:text-8xl font-extrabold italic capitalize animate-enter font-display gradient-text" style="--stagger: 1">
   
           Ports
         
 </h1>
-        <div class="flex w-full justify-between items-center">
+        <div class="flex flex-col sm:flex-row gap-6 w-full justify-between items-center">
           <div class="flex flex-col gap-2 text-xl text-subtle italic lg:text-xl">
             <p class="animate-enter" style="--stagger: 2">
               Journey through the center of the galaxy
@@ -97,14 +97,12 @@
         </div>
       </div>
     </div>
-    <ul class="animate-enter grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4" style="--stagger: 2" id="port-list">
-      <li class="h-full w-64" x-show="filtered.has('port-YouTube')" data-name="YouTube" data-repo="https://github.com/lunar-theme/youtube" data-keywords="css">
-  <a rel="external" target="_blank" href="https://github.com/lunar-theme/youtube" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
-    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+    <ul class="animate-enter grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 w-full" style="--stagger: 2" id="port-list">
+      <li class="h-full" x-show="filtered.has('port-YouTube')">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/youtube" class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <h2 class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
       YouTube
-    </p>
-
-    <div class="flex-1"></div>
+    </h2>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">
@@ -116,13 +114,11 @@
     </div>
   </a>
 </li>
-<li class="h-full w-64" x-show="filtered.has('port-GitHub')" data-name="GitHub" data-repo="https://github.com/lunar-theme/github" data-keywords="css">
-  <a rel="external" target="_blank" href="https://github.com/lunar-theme/github" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
-    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+<li class="h-full" x-show="filtered.has('port-GitHub')">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/github" class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <h2 class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
       GitHub
-    </p>
-
-    <div class="flex-1"></div>
+    </h2>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">
@@ -134,13 +130,11 @@
     </div>
   </a>
 </li>
-<li class="h-full w-64" x-show="filtered.has('port-Wikipedia')" data-name="Wikipedia" data-repo="https://github.com/lunar-theme/wikipedia" data-keywords="css">
-  <a rel="external" target="_blank" href="https://github.com/lunar-theme/wikipedia" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
-    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+<li class="h-full" x-show="filtered.has('port-Wikipedia')">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/wikipedia" class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <h2 class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
       Wikipedia
-    </p>
-
-    <div class="flex-1"></div>
+    </h2>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">
@@ -152,13 +146,11 @@
     </div>
   </a>
 </li>
-<li class="h-full w-64" x-show="filtered.has('port-OneCommander')" data-name="OneCommander" data-repo="https://github.com/lunar-theme/onecommander" data-keywords="files, xaml">
-  <a rel="external" target="_blank" href="https://github.com/lunar-theme/onecommander" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
-    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+<li class="h-full" x-show="filtered.has('port-OneCommander')">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/onecommander" class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <h2 class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
       OneCommander
-    </p>
-
-    <div class="flex-1"></div>
+    </h2>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">
@@ -170,13 +162,11 @@
     </div>
   </a>
 </li>
-<li class="h-full w-64" x-show="filtered.has('port-Ueli')" data-name="Ueli" data-repo="https://github.com/lunar-theme/ueli" data-keywords="lunar, ueli">
-  <a rel="external" target="_blank" href="https://github.com/lunar-theme/ueli" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
-    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+<li class="h-full" x-show="filtered.has('port-Ueli')">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/ueli" class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <h2 class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
       Ueli
-    </p>
-
-    <div class="flex-1"></div>
+    </h2>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">
@@ -188,13 +178,11 @@
     </div>
   </a>
 </li>
-<li class="h-full w-64" x-show="filtered.has('port-Wallpapers')" data-name="Wallpapers" data-repo="https://github.com/lunar-theme/wallpapers" data-keywords="wallpapers, lunar">
-  <a rel="external" target="_blank" href="https://github.com/lunar-theme/wallpapers" class="px-4 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
-    <p class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
+<li class="h-full" x-show="filtered.has('port-Wallpapers')">
+  <a rel="external" target="_blank" href="https://github.com/lunar-theme/wallpapers" class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    <h2 class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words">
       Wallpapers
-    </p>
-
-    <div class="flex-1"></div>
+    </h2>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">
@@ -212,15 +200,14 @@
   </div>
 </section> 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
-<script> 
-const items = document.querySelectorAll('#port-list>li')
-const portsJson = Array.from(items).map(i => i.dataset)
-const allSet = new Set(portsJson.map(p => `port-${p.name}`))
+<script>let portSearchData = [{"name":"YouTube","keywords":["css"]},{"name":"GitHub","keywords":["css"]},{"name":"Wikipedia","keywords":["css"]},{"name":"OneCommander","keywords":["files, xaml"]},{"name":"Ueli","keywords":["lunar, ueli"]},{"name":"Wallpapers","keywords":["wallpapers, lunar"]}];
+ 
+const allSet = new Set(portSearchData.map(p => `port-${p.name}`))
 
 window.portSearch = () => ({
     search: '',
-    fuseObj: new Fuse(portsJson, {
-      keys: ["name", "repo", "keywords"],
+    fuseObj: new Fuse(portSearchData, {
+      keys: ["name", "keywords"],
     }),
     filter () {
       if (this.search === '' || this.search === '*') {
