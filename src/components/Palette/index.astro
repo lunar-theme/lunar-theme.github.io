@@ -5,29 +5,29 @@ import Ingredients from './Ingredients/index.astro'
 import Title from '@components/Common/Title.astro'
 ---
 <Section>
-  <div x-data="{ open: 'swa' }" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col gap-4 items-center" >
-  <div
-    class="flex flex-col lg:flex-row lg:text-left justify-between items-center w-full"
-  >
-    <div class="flex flex-col items-around justify-center">
-      <Title>
-        Palette
-      </Title>
-      <p class="animate-enter text-xl text-subtle italic mb-5 lg:text-xl" style="--stagger: 2">
-        Signals from outer space
-      </p>
+  <div x-data="{ open: 'swa' }" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col items-center" >
+    <div
+      class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-12 w-full"
+    >
+      <div class="flex flex-col items-around justify-center">
+        <Title>
+          Palette
+        </Title>
+        <p class="animate-enter text-xl text-subtle italic mb-5 lg:text-xl" style="--stagger: 2">
+          Signals from outer space
+        </p>
+      </div>
+      <div id="toggler" class="btn-group">
+        <button class="lowercase" x-on:click="open = 'swa'" x-bind:class="'btn btn-sm' + (open == 'swa' ? ' btn-active' : '')">Swatches</button>
+        <button class="lowercase" x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
+      </div>
     </div>
-    <div id="toggler" class="btn-group">
-      <button class="lowercase" x-on:click="open = 'swa'" x-bind:class="'btn btn-sm' + (open == 'swa' ? ' btn-active' : '')">Swatches</button>
-      <button class="lowercase" x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
+    <div
+      class="animate-enter flex flex-grow justify-center items-center w-full"
+      style="--stagger: 1"
+    >
+      <Ingredients />
+      <Swatches />
     </div>
-  </div>
-  <div
-    class="animate-enter flex flex-grow justify-center items-center w-full"
-    style="--stagger: 1"
-  >
-    <Ingredients />
-    <Swatches />
-  </div>
   </div>
 </Section>
