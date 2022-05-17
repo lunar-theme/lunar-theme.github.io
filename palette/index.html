@@ -15,7 +15,7 @@
 <link href="https://api.fontshare.com/css?f[]=general-sans@1,2,200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
 <script src="//unpkg.com/alpinejs" type="module"></script>
 
-  <link rel="stylesheet" href="/assets/asset.b96c9ddf.css"></link><script type="module" src="/entry.098e3fef.js" astro-script="/palette/script-0"></script>
+  <link rel="stylesheet" href="/assets/asset.87096c6f.css"></link><script type="module" src="/entry.098e3fef.js" astro-script="/palette/script-0"></script>
 </head>
   <body>
     <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg bg-inner-core">
@@ -63,25 +63,25 @@
       <main class="grow flex flex-col items-center relative">
         <section class="w-full py-20">
   <div class="mx-auto w-full max-w-content">
-    <div x-data="{ open: 'swa' }" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col gap-4 items-center">
-  <div class="flex flex-col lg:flex-row lg:text-left justify-between items-center w-full">
-    <div class="flex flex-col items-around justify-center">
-      <h1 class="mb-5 text-6xl lg:text-8xl font-extrabold italic capitalize animate-enter font-display gradient-text" style="--stagger: 1">
+    <div x-data="{ open: 'swa' }" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col items-center">
+    <div class="flex flex-col lg:flex-row lg:text-left justify-between items-center mb-12 w-full">
+      <div class="flex flex-col items-around justify-center">
+        <h1 class="mb-5 text-6xl lg:text-8xl font-extrabold italic capitalize animate-enter font-display gradient-text text-center sm:text-left" style="--stagger: 1">
   
-        Palette
-      
+          Palette
+        
 </h1>
-      <p class="animate-enter text-xl text-subtle italic mb-5 lg:text-xl" style="--stagger: 2">
-        Signals from outer space
-      </p>
+        <p class="animate-enter text-xl text-subtle italic mb-5 lg:text-xl" style="--stagger: 2">
+          Signals from outer space
+        </p>
+      </div>
+      <div id="toggler" class="btn-group">
+        <button class="lowercase" x-on:click="open = 'swa'" x-bind:class="'btn btn-sm' + (open == 'swa' ? ' btn-active' : '')">Swatches</button>
+        <button class="lowercase" x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
+      </div>
     </div>
-    <div id="toggler" class="btn-group">
-      <button class="lowercase" x-on:click="open = 'swa'" x-bind:class="'btn btn-sm' + (open == 'swa' ? ' btn-active' : '')">Swatches</button>
-      <button class="lowercase" x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
-    </div>
-  </div>
-  <div class="animate-enter flex flex-grow justify-center items-center w-full" style="--stagger: 1">
-    <div x-show="open == 'ing'" class="animate-enter w-full" style="--stagger: 1">
+    <div class="animate-enter flex flex-grow justify-center items-center w-full" style="--stagger: 1">
+      <div x-show="open == 'ing'" class="animate-enter w-full" style="--stagger: 1">
   <div class="overflow-x-auto w-full">
     <table class="table w-full"><thead><tr><th>Role</th>
     <th>Hex</th>
@@ -134,7 +134,7 @@
   <td>hsl(153, 92.7%, 26.9%)</td></tr></tbody></table>
   </div>
 </div>
-    <div x-show="open == 'swa'" class="animate-enter" style="--stagger: 1">
+      <div x-show="open == 'swa'" class="animate-enter" style="--stagger: 1">
   <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
     <div class="tooltip tooltip-secondary" data-tip="#161616">
   <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#161616">
@@ -239,7 +239,7 @@
   </div>
 </div>
 
-  </div>
+    </div>
   </div>
   </div>
 </section> 
