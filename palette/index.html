@@ -15,7 +15,7 @@
 <link href="https://api.fontshare.com/css?f[]=general-sans@1,2,200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
 <script src="//unpkg.com/alpinejs" type="module"></script>
 
-  <link rel="stylesheet" href="/assets/asset.87096c6f.css"></link><script type="module" src="/entry.098e3fef.js" astro-script="/palette/script-0"></script>
+  <link rel="stylesheet" href="/assets/asset.6fc87b6f.css"></link><script type="module" src="/entry.098e3fef.js" astro-script="/palette/script-0"></script>
 </head>
   <body>
     <div class="hero min-h-screen flex flex-col relative drop-shadow-lg shadow-lg bg-inner-core">
@@ -80,7 +80,7 @@
         <button class="lowercase" x-on:click="open = 'ing'" x-bind:class="'btn btn-sm' + (open == 'ing' ? ' btn-active' : '')">Ingredients</button>
       </div>
     </div>
-    <div class="animate-enter flex flex-grow justify-center items-center w-full" style="--stagger: 1">
+    <div class="animate-enter w-full" style="--stagger: 1">
       <div x-show="open == 'ing'" class="animate-enter w-full" style="--stagger: 1">
   <div class="overflow-x-auto w-full">
     <table class="table w-full"><thead><tr><th>Role</th>
@@ -134,10 +134,10 @@
   <td>hsl(153, 92.7%, 26.9%)</td></tr></tbody></table>
   </div>
 </div>
-      <div x-show="open == 'swa'" class="animate-enter" style="--stagger: 1">
-  <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
-    <div class="tooltip tooltip-secondary" data-tip="#161616">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#161616">
+      <div x-show="open == 'swa'" class="animate-enter w-full" style="--stagger: 1">
+  <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 justify-items-center">
+    <div class="tooltip tooltip-secondary w-full" data-tip="#161616">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#161616">
     <figure class="h-12 w-full" style="background: rgb(22, 22, 22) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Inner Core</h2>
@@ -145,8 +145,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#202020">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#202020">
+<div class="tooltip tooltip-secondary w-full" data-tip="#202020">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#202020">
     <figure class="h-12 w-full" style="background: rgb(32, 32, 32) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Outer Core</h2>
@@ -154,8 +154,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#252525">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#252525">
+<div class="tooltip tooltip-secondary w-full" data-tip="#252525">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#252525">
     <figure class="h-12 w-full" style="background: rgb(37, 37, 37) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Mantle</h2>
@@ -163,8 +163,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#303030">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#303030">
+<div class="tooltip tooltip-secondary w-full" data-tip="#303030">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#303030">
     <figure class="h-12 w-full" style="background: rgb(48, 48, 48) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Crust</h2>
@@ -172,8 +172,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#3281ea">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#3281ea">
+<div class="tooltip tooltip-secondary w-full" data-tip="#3281ea">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#3281ea">
     <figure class="h-12 w-full" style="background: rgb(50, 129, 234) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Tropo</h2>
@@ -181,8 +181,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#0284e8">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#0284e8">
+<div class="tooltip tooltip-secondary w-full" data-tip="#0284e8">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#0284e8">
     <figure class="h-12 w-full" style="background: rgb(2, 132, 232) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Strato</h2>
@@ -190,8 +190,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#02a3e8">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#02a3e8">
+<div class="tooltip tooltip-secondary w-full" data-tip="#02a3e8">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#02a3e8">
     <figure class="h-12 w-full" style="background: rgb(2, 163, 232) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Meso</h2>
@@ -199,8 +199,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#02bbe8">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#02bbe8">
+<div class="tooltip tooltip-secondary w-full" data-tip="#02bbe8">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#02bbe8">
     <figure class="h-12 w-full" style="background: rgb(2, 187, 232) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Thermo</h2>
@@ -208,8 +208,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#f3f3f3">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#f3f3f3">
+<div class="tooltip tooltip-secondary w-full" data-tip="#f3f3f3">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#f3f3f3">
     <figure class="h-12 w-full" style="background: rgb(243, 243, 243) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Text</h2>
@@ -217,8 +217,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#B10C0C">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#B10C0C">
+<div class="tooltip tooltip-secondary w-full" data-tip="#B10C0C">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#B10C0C">
     <figure class="h-12 w-full" style="background: rgb(177, 12, 12) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Magma</h2>
@@ -226,8 +226,8 @@
     </div>
   </button>
 </div>
-<div class="tooltip tooltip-secondary" data-tip="#05844A">
-  <button class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#05844A">
+<div class="tooltip tooltip-secondary w-full" data-tip="#05844A">
+  <button class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch" data-clipboard="#05844A">
     <figure class="h-12 w-full" style="background: rgb(5, 132, 74) none repeat scroll 0% 0%"></figure>
     <div class="card-body items-center text-center swap">
       <h2 class="text-xl font-semibold swap-off lowercase">Nebula</h2>
