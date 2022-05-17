@@ -2,8 +2,8 @@
 import palette from '@data/palette.json'
 import Swatch from './Swatch.astro'
 ---
-<div x-show="open == 'swa'" class="animate-enter" style="--stagger: 1">
-  <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
+<div x-show="open == 'swa'" class="animate-enter w-full" style="--stagger: 1">
+  <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 justify-items-center">
     {
       Object.entries((palette as Palette))
         .map(

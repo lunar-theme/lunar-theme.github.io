@@ -9,9 +9,9 @@ let { name, color } = Astro.props as Props
 name = name.replace(/([A-Z])/g, " $1")
 name = name.charAt(0).toUpperCase() + name.slice(1)
 ---
-<Tooltip title={color.hex}>
+<Tooltip title={color.hex} className="w-full">
   <button
-    class="btn card w-32 sm:w-48 card-compact p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch"
+    class="btn card card-compact w-full p-0 h-auto items-stretch justify-start drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow swatch"
     data-clipboard={color.hex}
   >
     <figure class="h-12 w-full" style={`background: ${ color.rgb } none repeat scroll 0% 0%`} />

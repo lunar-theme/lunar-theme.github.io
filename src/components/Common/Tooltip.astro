@@ -1,10 +1,11 @@
 ---
 export interface Props {
  title: string
+ className?: string
 }
 
-const { title } = Astro.props as Props
+const { title, className = '' } = Astro.props as Props
 ---
-<div class="tooltip tooltip-secondary" data-tip={title}>
+<div class={"tooltip tooltip-secondary " + className} data-tip={title}>
   <slot />
 </div>
