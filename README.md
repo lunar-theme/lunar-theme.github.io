@@ -2,7 +2,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# 🌙 The Lunar Website
+# 🌜 The Lunar Website
 
 <img src="https://raw.githubusercontent.com/lunar-theme/lunar/main/assets/icon-rounded.png" align="right">
 
