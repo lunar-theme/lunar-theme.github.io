@@ -6,7 +6,7 @@
 
 <img src="https://raw.githubusercontent.com/lunar-theme/lunar/main/assets/icon-rounded.png" align="right">
 
-🌐 This is the Lunar theme website. It is built with [Astro](https://astro.build) thanks to [Blakeinstein](https://github.com/Blakeinstein). The website contains all ports, and colors for the palette, and showcases the color scheme.
+🌐 This is the Lunar theme website. It is built with [Astro](https://astro.build) thanks to [Blaine](https://github.com/Blakeinstein). The website contains all ports, and colors for the palette, and showcases the color scheme.
 
 The source code is licensed under the GPL.
 
