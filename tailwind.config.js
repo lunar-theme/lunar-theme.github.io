@@ -30,8 +30,10 @@ module.exports = {
 				"strato": 'var(--strato)',
 				"meso": 'var(--meso)',
 				"thermo": 'var(--thermo)',
+				"galaxy": 'var(--galaxy)',
 				"text": 'var(--text)',
 				"magma": 'var(--magma)',
+				"sunset": 'var(--sunset)',
 				"nebula": 'var(--nebula)',
 			},
 			boxShadow: {
