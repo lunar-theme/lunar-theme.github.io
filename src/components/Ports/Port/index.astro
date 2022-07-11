@@ -5,6 +5,12 @@ export interface Props {
 }
 
 let { port } = Astro.props as Props
+let maintainers = []
+port.maintainers.forEach(m => {
+  maintainers.push({"name": m.name, "url": m.url})
+})
+maintainers = Array.from(new Set(maintainers))
+
 ---
 <li class="h-full" x-show={`filtered.has('port-${ port.name }')`}>
   <a
@@ -18,6 +24,16 @@ let { port } = Astro.props as Props
     >
       {port.name}
     </h2>
+    <h3
+      class="font-display font-medium text-xs sm:text-base text-center tracking-wide normal-case break-words whitespace-nowrap overflow-hidden overflow-ellipsis"
+    >
+      {maintainers.map(m => {
+        if (maintainers.indexOf(m) == maintainers.length - 1) {
+          return <a href={m.url}>{m.name}</a>
+        }
+        return <a href={m.url}>{m.name}</a><p class="inline">, </p>
+      })}
+    </h3>
 
     <div class="mt-4 space-x-3 flex items-center">
       <div class="w-5 h-5 flex items-center justify-center">
