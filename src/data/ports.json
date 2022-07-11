@@ -12,6 +12,18 @@
 		"variants": false
 	},
 	{
+		"name": "Discord",
+		"repo": "https://github.com/lunar-theme/discord",
+		"maintainers": [
+			{
+				"name": "Pukima",
+				"url": "https://pukima.site"
+			}
+		],
+		"keywords": ["css", "scss"],
+		"variants": false
+	},
+	{
 		"name": "GitHub",
 		"repo": "https://github.com/lunar-theme/github",
 		"maintainers": [
