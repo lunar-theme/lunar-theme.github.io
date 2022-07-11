@@ -20,8 +20,8 @@
 				"url": "https://pukima.site"
 			}
 		],
-		"keywords": ["css", "scss"],
-		"variants": false
+		"keywords": ["css", "scss", "betterdiscord", "vizality", "aliucord", "powercord", "goosemod"],
+		"variants": true
 	},
 	{
 		"name": "GitHub",
