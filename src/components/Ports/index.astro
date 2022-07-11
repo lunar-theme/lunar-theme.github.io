@@ -13,7 +13,7 @@ const portSearchData = portsJson.map(port => ({
   keywords: port.keywords,
 }))
 
-const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.url))
+const maintainers = new Set(ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.name))
 ---
 <Section>
   <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col items-center">
