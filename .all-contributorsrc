@@ -26,6 +26,16 @@
         "content",
         "maintenance"
       ]
+    },
+    {
+      "login": "Pukimaa",
+      "name": "Pukima",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58347116?v=4",
+      "profile": "https://pukima.site",
+      "contributions": [
+        "doc",
+        "data"
+      ]
     }
   ],
   "contributorsPerLine": 7,
