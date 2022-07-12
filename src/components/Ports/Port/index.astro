@@ -4,29 +4,38 @@ export interface Props {
   port: Port
 }
 
-let { port } = Astro.props as Props
+const { port } = Astro.props as Props
+const maintainers = Array.from(new Set(port.maintainers))
 ---
-<li class="h-full" x-show={`filtered.has('port-${ port.name }')`}>
-  <a
-    rel="external"
-    target="_blank"
-    href={port.repo}
-    class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow"
-  >
-    <h2
-      class="font-display font-semibold text-md sm:text-lg text-center tracking-wide normal-case break-words"
-    >
-      {port.name}
-    </h2>
-
-    <div class="mt-4 space-x-3 flex items-center">
-      <div class="w-5 h-5 flex items-center justify-center">
-        <Icon name="bi:moon-stars" class="w-6 h-6 text-tropo" />
+<li x-show={`filtered.has('port-${ port.name }')`}>
+  <div class="px-2 py-8 sm:py-12 btn card card-compact p-0 h-full drop-shadow-xl shadow-lg hover:shadow-primary hover:shadow">
+    
+    <div class="card-body items-center text-center">
+      <a
+        rel="external"
+        target="_blank"
+        href={port.repo}
+        class="card-title tracking-wide normal-case break-words"
+        style={"color: " + port.color}
+      >
+        {port.name}
+      </a>
+      <div class="text-s font-medium whitespace-nowrap overflow-hidden overflow-ellipsis">
+        {maintainers.map((m, idx) => 
+          <>
+            <a href={m.url} rel="external" target="_blank" class="link normal-case">{m.name}</a>{idx != maintainers.length - 1 && <span class="inline"> , </span>}
+          </>
+        )}
       </div>
-
-      {port.variants && <div class="w-5 h-5 flex items-center justify-center">
-          <Icon name="cil:sun" class="w-8 h-8 text-magma" />
-        </div>}
+      <div class="mt-4 space-x-3 flex items-center card-actions">
+        <div class="w-5 h-5 flex items-center justify-center">
+          <Icon name="bi:moon-stars" class="w-6 h-6 text-tropo" />
+        </div>
+  
+        {port.variants && <div class="w-5 h-5 flex items-center justify-center">
+            <Icon name="cil:sun" class="w-8 h-8 text-yellow-300" />
+          </div>}
+      </div>
     </div>
-  </a>
+  </div>
 </li>

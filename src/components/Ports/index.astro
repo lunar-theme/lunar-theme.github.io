@@ -13,7 +13,7 @@ const portSearchData = portsJson.map(port => ({
   keywords: port.keywords,
 }))
 
-const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.url))
+const maintainers = new Set(ports.flatMap(port => port.maintainers).flatMap(maintainer => maintainer.name))
 ---
 <Section>
   <div x-data="window.portSearch()" x-init="$watch('search', () => filtered = filter())" class="w-[90vw] sm:w-[80vw] max-w-full flex flex-col items-center">
@@ -33,9 +33,9 @@ const maintainers = new Set(...ports.flatMap(port => port.maintainers).flatMap(m
               <div class="animate-enter flex items-center space-x-1" style="--stagger: 2.25">
                 <Icon class="text-magma w-6 h-6" name="heroicons-solid:color-swatch" />
                 <span
-                  class="bg-gradient-to-r from-magma to-tropo bg-clip-text font-medium text-transparent"
+                  class="bg-gradient-to-r from-magma to-sunset bg-clip-text font-medium text-transparent"
                 >
-                  { ports.length } Ports
+                  { ports.length } ports
                 </span>
               </div>
               <div
