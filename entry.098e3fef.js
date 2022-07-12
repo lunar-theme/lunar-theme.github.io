@@ -1,1 +1,0 @@
-function o(t){const e=t.currentTarget,c=e.dataset.clipboard;navigator.clipboard.writeText(c);const a=e.querySelector(".card-body");a.classList.add("swap-active"),setTimeout(()=>{a.classList.remove("swap-active")},1200)}document.querySelectorAll(".swatch").forEach(t=>t.addEventListener("click",o,!1));
