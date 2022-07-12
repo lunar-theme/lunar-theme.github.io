@@ -1,5 +1,6 @@
 [
 	{
+		"color": "#FF0000",
 		"name": "YouTube",
 		"repo": "https://github.com/lunar-theme/youtube",
 		"maintainers": [
@@ -12,6 +13,7 @@
 		"variants": false
 	},
 	{
+		"color": "#5865F2",
 		"name": "Discord",
 		"repo": "https://github.com/lunar-theme/discord",
 		"maintainers": [
@@ -20,7 +22,7 @@
 				"url": "https://pukima.site"
 			}
 		],
-		"keywords": ["css", "scss", "betterdiscord", "vizality", "aliucord", "powercord", "goosemod"],
+		"keywords": ["css", "scss", "betterdiscord", "vizality", "aliucord", "powercord", "goosemod", "mobile", "phone"],
 		"variants": true
 	},
 	{
@@ -72,6 +74,7 @@
 		"variants": false
 	},
 	{
+		"color": "var(--strato)",
 		"name": "Wallpapers",
 		"repo": "https://github.com/lunar-theme/wallpapers",
 		"maintainers": [
@@ -85,13 +88,14 @@
 			},
 			{
 				"name": "Pukima",
-				"url": "https://github.com/Pukimaa"
+				"url": "https://pukima.site"
 			}
 		],
 		"keywords": ["wallpapers, lunar"],
 		"variants": false
 	},
 	{
+		"color": "#FF4500",
 		"name": "Reddit",
 		"repo": "https://github.com/lunar-theme/reddit",
 		"maintainers": [

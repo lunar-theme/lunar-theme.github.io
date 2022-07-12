@@ -16,6 +16,7 @@ declare interface Maintainer {
 }
 
 declare interface Port {
+  color: string 
   name: string
   repo: string
   maintainers: Maintainer[]
