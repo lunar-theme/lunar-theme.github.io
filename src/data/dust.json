@@ -1,0 +1,28 @@
+{
+    "cirrus": {
+      "hex": "#dfdfdf",
+      "rgb": "rgb(223, 223, 223)",
+      "hsl": "hsl(0, 0%, 87%)"
+    },
+    "stratus": {
+      "hex": "#cecece",
+      "rgb": "rgb(206, 206, 206)",
+      "hsl": "hsl(0, 0%, 81%)"
+    },
+    "atlo": {
+      "hex": "#c9cbce",
+      "rgb": "rgb(201, 203, 206)",
+      "hsl": "hsl(216, 5%, 80%)"
+    },
+    "cumulus": {
+      "hex": "#bbc1c8",
+      "rgb": "rgb(187, 193, 200)",
+      "hsl": "hsl(212, 11%, 76%)"
+    },
+    "nimbus": {
+      "hex": "#7e848e",
+      "rgb": "rgb(126, 132, 142)",
+      "hsl": "hsl(218, 7%, 53%)"
+    }
+}
+  
